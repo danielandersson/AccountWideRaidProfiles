@@ -6,6 +6,8 @@ on:
       - classic
     tags:
       - '**-classic'
+    paths-ignore:
+      - '.github/**'
 
 env:
   GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
