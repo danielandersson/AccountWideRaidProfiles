@@ -1,0 +1,26 @@
+name: Package Retail
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - '*'
+      - '!**-classic'
+    paths-ignore:
+      - '.github/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout addon
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 100
+
+      - name: Package Retail
+        uses: BigWigsMods/packager@master
+        env:
+          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
