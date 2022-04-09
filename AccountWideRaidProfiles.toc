@@ -1,4 +1,5 @@
-## Interface: 90200
+## Interface: 11402
+## Interface-BCC: 20504
 ## Title: Account Wide Raid Profiles
 ## Notes: Make blizzard raid profile settings account-wide.
 ## Author: Safetyy-Illidan(US)
